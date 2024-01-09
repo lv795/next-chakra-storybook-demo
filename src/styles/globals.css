@@ -3,25 +3,222 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Mode 1 */
+  /* colors */
+  --jg-color-base-black: #000000;
+  --jg-color-base-white: #ffffff;
+  --jg-color-green-100: #1ddf63;
+  --jg-color-green-200: #149c45;
+  --jg-color-green-300: #0e6d31;
+  --jg-color-green-400: #0a4c22;
+  --jg-color-green-50: #20f56d;
+  --jg-color-green-500: #073618;
+  --jg-color-green-alpha-10: #1ddf631a;
+  --jg-color-green-alpha-12: #1ddf631f;
+  --jg-color-green-alpha-14: #1ddf6324;
+  --jg-color-green-alpha-16: #1ddf6329;
+  --jg-color-green-alpha-6: #1ddf630f;
+  --jg-color-green-alpha-8: #1ddf6314;
+  --jg-color-neutral-100: #f5f5f5;
+  --jg-color-neutral-200: #e5e5e5;
+  --jg-color-neutral-300: #d4d4d4;
+  --jg-color-neutral-400: #a3a3a3;
+  --jg-color-neutral-50: #fafafa;
+  --jg-color-neutral-500: #737373;
+  --jg-color-neutral-600: #525252;
+  --jg-color-neutral-700: #404040;
+  --jg-color-neutral-800: #262626;
+  --jg-color-neutral-900: #1d1d1d;
+  --jg-color-neutral-950: #0a0a0a;
+  --jg-color-red-100: #ed416a;
+  --jg-color-red-200: #a62e4a;
+  --jg-color-red-300: #742034;
+  --jg-color-red-400: #511624;
+  --jg-color-red-50: #ff4875;
+  --jg-color-red-500: #391019;
+  --jg-color-red-alpha-10: #ed416a1a;
+  --jg-color-red-alpha-12: #ed416a1f;
+  --jg-color-red-alpha-14: #ed416a24;
+  --jg-color-red-alpha-16: #ed416a29;
+  --jg-color-red-alpha-6: #ed416a0f;
+  --jg-color-red-alpha-8: #ed416a14;
+  --jg-color-white-alpha-12: #ffffff1f;
+  --jg-color-white-alpha-16: #ffffff29;
+  --jg-color-white-alpha-2: #ffffff05;
+  --jg-color-white-alpha-4: #ffffff0a;
+  --jg-color-white-alpha-8: #ffffff14;
+  --jg-color-yellow-100: #e9fe53;
+  --jg-color-yellow-200: #a3b23a;
+  --jg-color-yellow-300: #727c29;
+  --jg-color-yellow-400: #50571c;
+  --jg-color-yellow-50: #ffff5b;
+  --jg-color-yellow-500: #383d14;
+  --jg-color-yellow-alpha-10: #e9fe531a;
+  --jg-color-yellow-alpha-12: #e9fe531f;
+  --jg-color-yellow-alpha-14: #e9fe5324;
+  --jg-color-yellow-alpha-16: #e9fe5329;
+  --jg-color-yellow-alpha-6: #e9fe530f;
+  --jg-color-yellow-alpha-8: #e9fe5314;
+  /* numbers */
+  --jg-dimensions-2: 0.125rem;
+  --jg-dimensions-4: 0.25rem;
+  --jg-dimensions-6: 0.375rem;
+  --jg-dimensions-8: 0.5rem;
+  --jg-dimensions-10: 0.625rem;
+  --jg-dimensions-12: 0.75rem;
+  --jg-dimensions-14: 0.875rem;
+  --jg-dimensions-16: 1rem;
+  --jg-dimensions-18: 1.125rem;
+  --jg-dimensions-20: 1.25rem;
+  --jg-dimensions-24: 1.5rem;
+  --jg-dimensions-28: 1.75rem;
+  --jg-dimensions-32: 2rem;
+  --jg-dimensions-36: 2.25rem;
+  --jg-dimensions-40: 2.5rem;
+  --jg-dimensions-44: 2.75rem;
+  --jg-dimensions-48: 3rem;
+  --jg-dimensions-56: 3.5rem;
+  --jg-dimensions-64: 4rem;
+  --jg-dimensions-80: 5rem;
+  --jg-dimensions-96: 6rem;
+  --jg-dimensions-112: 7rem;
+  --jg-dimensions-128: 8rem;
+  --jg-dimensions-144: 9rem;
+  --jg-dimensions-160: 10rem;
+  --jg-dimensions-176: 11rem;
+  --jg-dimensions-192: 12rem;
+  --jg-dimensions-208: 13rem;
+  --jg-dimensions-224: 14rem;
+  --jg-dimensions-240: 15rem;
+  --jg-dimensions-256: 16rem;
+  --jg-dimensions-288: 18rem;
+  --jg-dimensions-320: 20rem;
+  --jg-dimensions-384: 24rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-theme="dark"] {
+  /* colors */
+  --jg-color-bg-bg: #1ddf63;
+  --jg-color-bg-elevated: #262626;
+  --jg-color-bg-popover: #262626f0;
+  --jg-color-bg-strong: #404040;
+  --jg-color-bg-subtle: #1d1d1d;
+  --jg-color-bg-tooltip: #404040f0;
+  --jg-color-bg-button-primary-green: #1ddf63;
+  --jg-color-bg-button-primary-green-disable: #0a4c22;
+  --jg-color-bg-button-primary-green-hover: #20f56d;
+  --jg-color-bg-button-primary-red: #ed416a;
+  --jg-color-bg-button-primary-red-disable: #511624;
+  --jg-color-bg-button-primary-red-hover: #ff4875;
+  --jg-color-bg-button-primary-yellow: #e9fe53;
+  --jg-color-bg-button-primary-yellow-disable: #50571c;
+  --jg-color-bg-button-primary-yellow-hover: #ffff5b;
+  --jg-color-bg-button-warning: #50571c;
+  --jg-color-bg-input-default: #ffffff0a;
+  --jg-color-bg-input-disable: #1d1d1d;
+  --jg-color-bg-input-focused: #ffffff05;
+  --jg-color-bg-tab-default: #ffffff0a;
+  --jg-color-bg-tab-selected-green: #0a4c2280;
+  --jg-color-bg-tab-selected-red: #661c2ecc;
+  --jg-color-bg-table-list-hover-1: #ffffff0a;
+  --jg-color-bg-table-list-hover-2: #ffffff14;
+  --jg-color-border-split-muted: #1d1d1d;
+  --jg-color-border-split-strong: #40404080;
+  --jg-color-border-button-outline: #ffffff29;
+  --jg-color-border-button-outline-hover: #a3a3a3;
+  --jg-color-border-button-secondary: #0e6d31;
+  --jg-color-border-button-secondary-hover: #1ddf63;
+  --jg-color-border-input-default: #262626;
+  --jg-color-border-input-focused: #0e6d31;
+  --jg-color-border-input-hover: #ffffff0a;
+  --jg-color-border-input-wrong: #a3b23a;
+  --jg-color-icon-disable: #525252;
+  --jg-color-icon-general: #737373;
+  --jg-color-icon-green-default: #1ddf63;
+  --jg-color-icon-green-disable: #0e6d31;
+  --jg-color-icon-green-subtle: #149c45;
+  --jg-color-icon-info: #737373;
+  --jg-color-icon-primary: #d4d4d4;
+  --jg-color-icon-red: #ed416a;
+  --jg-color-icon-warning: #e9fe53;
+  --jg-color-text-black: #0a0a0a;
+  --jg-color-text-hight-light: #fafafa;
+  --jg-color-text-primary: #d4d4d4;
+  --jg-color-text-red-default: #ed416a;
+  --jg-color-text-red-disable: #742034;
+  --jg-color-text-scendary: #737373;
+  --jg-color-text-tooltip: #525252;
+  --jg-color-text-green-default: #1ddf63;
+  --jg-color-text-green-disable: #0e6d31;
+  --jg-color-text-green-subtle: #149c45;
+  --jg-color-text-yellow-default: #e9fe53;
+  --jg-color-text-yellow-disable: #727c29;
+  /* numbers */
+  --jg-opacity-94: 6rem;
+  --jg-radius-sm: 0.25rem;
+  --jg-radius-md: 0.375rem;
+  --jg-radius-lg: 0.5rem;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+[data-theme="light"] {
+  /* colors */
+  --jg-color-bg-bg: #ed416a;
+  --jg-color-bg-elevated: #232424;
+  --jg-color-bg-popover: #fffffff0;
+  --jg-color-bg-strong: #333538;
+  --jg-color-bg-subtle: #1b1c1c;
+  --jg-color-bg-tooltip: #ffffff;
+  --jg-color-bg-button-primary-green: #ffffff;
+  --jg-color-bg-button-primary-green-disable: #ffffff;
+  --jg-color-bg-button-primary-green-hover: #ffffff;
+  --jg-color-bg-button-primary-red: #ffffff;
+  --jg-color-bg-button-primary-red-disable: #ffffff;
+  --jg-color-bg-button-primary-red-hover: #ffffff;
+  --jg-color-bg-button-primary-yellow: #ffffff;
+  --jg-color-bg-button-primary-yellow-disable: #ffffff;
+  --jg-color-bg-button-primary-yellow-hover: #ffffff;
+  --jg-color-bg-button-warning: #ffffff;
+  --jg-color-bg-input-default: #ffffff;
+  --jg-color-bg-input-disable: #ffffff;
+  --jg-color-bg-input-focused: #ffffff;
+  --jg-color-bg-tab-default: #ffffff;
+  --jg-color-bg-tab-selected-green: #ffffff;
+  --jg-color-bg-tab-selected-red: #ffffff;
+  --jg-color-bg-table-list-hover-1: #ffffff0a;
+  --jg-color-bg-table-list-hover-2: #ffffff14;
+  --jg-color-border-split-muted: #1f2125;
+  --jg-color-border-split-strong: #2d3030;
+  --jg-color-border-button-outline: #ffffff;
+  --jg-color-border-button-outline-hover: #ffffff;
+  --jg-color-border-button-secondary: #ffffff;
+  --jg-color-border-button-secondary-hover: #ffffff;
+  --jg-color-border-input-default: #2a2b2c;
+  --jg-color-border-input-focused: #1ddf6380;
+  --jg-color-border-input-hover: #2a2b2c;
+  --jg-color-border-input-wrong: #e9fe5380;
+  --jg-color-icon-disable: #ffffff;
+  --jg-color-icon-general: #ffffff;
+  --jg-color-icon-green-default: #ffffff;
+  --jg-color-icon-green-disable: #ffffff;
+  --jg-color-icon-green-subtle: #ffffff;
+  --jg-color-icon-info: #ffffff;
+  --jg-color-icon-primary: #ffffff;
+  --jg-color-icon-red: #ffffff;
+  --jg-color-icon-warning: #ffffff;
+  --jg-color-text-black: #000900;
+  --jg-color-text-hight-light: #fefffe;
+  --jg-color-text-primary: #bcc0c0;
+  --jg-color-text-red-default: #ed416a;
+  --jg-color-text-red-disable: #ed416a;
+  --jg-color-text-scendary: #7c8080;
+  --jg-color-text-tooltip: #4d4e4c;
+  --jg-color-text-green-default: #15155d;
+  --jg-color-text-green-disable: #15155d;
+  --jg-color-text-green-subtle: #15155d;
+  --jg-color-text-yellow-default: #e9fe53;
+  --jg-color-text-yellow-disable: #e9fe53;
+  /* numbers */
+  --jg-opacity-94: 0rem;
+  --jg-radius-lg: 0rem;
+  --jg-radius-md: 0rem;
+  --jg-radius-sm: 0rem;
 }
