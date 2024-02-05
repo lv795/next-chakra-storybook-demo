@@ -1,16 +1,24 @@
 import "@/styles/globals.css";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query' 
+import { WagmiProvider } from 'wagmi'
 import { ChakraProvider } from "@chakra-ui/react";
 import theme from "@/theme/index";
-import { RootStoreProvider } from '@/context/root-store'
+import { RootStoreProvider } from "@/context/root-store";
+import { config } from "@/context/wagmiConfig";
+
+const queryClient = new QueryClient() 
 
 function App({ Component, pageProps, initialData }) {
-
   return (
-    <RootStoreProvider>
-      <ChakraProvider theme={theme}>
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </RootStoreProvider>
+    <WagmiProvider config={config} reconnectOnMount={true}>
+      <QueryClientProvider client={queryClient}> 
+      <RootStoreProvider>
+        <ChakraProvider theme={theme}>
+          <Component {...pageProps} />
+        </ChakraProvider>
+      </RootStoreProvider>
+      </QueryClientProvider>
+    </WagmiProvider>
   );
 }
 
@@ -36,4 +44,4 @@ function App({ Component, pageProps, initialData }) {
 //       // initialData,
 //     };
 // }
-export default App
+export default App;
